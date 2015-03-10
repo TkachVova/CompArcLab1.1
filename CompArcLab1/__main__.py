@@ -2,6 +2,9 @@ import MyXmlParser
 import conf
 import gevent
 import urllib
+from gevent import monkey
+
+monkey.patch_all()
 __author__ = 'vladymyr'
 
 def fetch(url):
